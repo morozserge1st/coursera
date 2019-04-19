@@ -1,0 +1,167 @@
+/*div {
+	border: 1px solid black;
+}
+*/
+ 														/* General setting*/
+body {
+	width: 80%;
+	margin: 0 auto;
+	
+}
+
+h1 {
+	font: 40px 'Open Sans', sans-serif;
+ 	width: 100%;
+ 	font-weight: bold;
+ 	text-align: center;
+}
+h1 span {
+	color:red;
+}
+ 												/* 		 Table list image			*/
+
+.wrapper input[type="radio"] {
+  display: none;
+}
+
+.label_list {
+  display: inline-block;  
+  background: url(img/table.png) no-repeat 50% 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+ 
+.wrapper input[type="radio"]:checked ~ .label_list {
+  background-position: 50% -26px;
+}
+
+.label_table {
+  display: inline-block;  
+  background: url(img/list.png) no-repeat 50% 0;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+
+.wrapper .label-check_table:checked ~ .label_table {
+  background-position: 50% -26px;
+}
+
+                                    					/* Stars */
+
+.rating_block {
+  width: 75px;
+  height: 15px;
+  padding-top: 5px;
+}
+.rating_block input[type="radio"] {
+  display: none;
+}
+.label_rating {
+  float: right;
+  display: block;  
+  background: url(img/rating.png) no-repeat 50% -2px;
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.rating_block .label_rating:hover, 
+.rating_block .label_rating:hover ~ .label_rating, 
+.rating_block input[type="radio"]:checked ~ .label_rating {
+  background-position: 50% -16px;
+}
+
+														/*Aling for bootom img*/
+
+
+ .item_img {
+ 	text-align: center;
+ 	height: 250px;
+}
+
+img { 	
+ 	max-height: 100%;
+ 	max-width: 100%;
+ }
+ 														/* other */
+ .item_row {
+ 	width: 250px;
+ 	padding: 30px;	
+	vertical-align: top;	
+ }
+ .item_name {
+ 	font: 20px 'Open Sans', sans-serif;
+ 	width: 100%;
+ 	white-space: nowrap;
+ 	overflow: hidden;
+ 	text-overflow: ellipsis;
+ }
+
+ .item_class {
+ 	font: 11px 'Open Sans', sans-serif;
+ 	display: inline-block;
+ 	width: 100%;
+}
+
+.item_producer{
+	float: left;
+	padding-right: 10px;
+}
+
+
+.item_price {
+ 	font: 17px 'Open Sans', sans-serif;
+ 	font-weight: bold;
+ 	color: red;
+ 	width: 100%;
+ 	margin: 10px 0;
+}
+
+.item_description {
+	font: 12px 'Open Sans', sans-serif;
+}
+
+.item_description span {
+	font-weight: bold;
+}
+
+	 													/*	 Table/list 	*/
+
+.wrapper #list:checked ~ .item_row
+{
+	display: inline-block;
+
+}
+
+.wrapper #table_list:checked ~ .item_row 
+{
+	display: table-row;
+	margin-bottom: 100px;
+}
+.wrapper #table_list:checked ~ .item_row .table
+{	
+	display: table-cell;
+	vertical-align: top;
+	border-spacing: 10px;
+	width: 300px;
+	padding: 25px;
+	padding-bottom: 100px;
+}
+
+.wrapper #table_list:checked ~ .item_row .cell
+{	
+	width: 600px;
+}
+
+														/*	Visible		*/
+a:hover {
+	color: red;
+}
+.item_row:hover img{
+	opacity: 0.7;
+}
+

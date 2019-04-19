@@ -1,0 +1,41 @@
+.animation {
+  width:150px; height:150px;
+  background:red;
+  animation:flipAround 3s;
+  animation-fill-mode: forwards;
+ }
+
+
+ 
+@keyframes flipAround {
+  25% {
+ 	transform:translateX(150px); 
+  }
+  50% {
+  	transform:translateX(150px) translateY(100%); 
+  }
+  75% {
+  	transform:translateX(150px) translateY(100%) scale(2);
+  }
+  100% {
+  	transform:translateX(150px) translateY(100%) scale(2) rotate(145deg); 
+  }
+}
+.animation:hover {
+  animation-fill-mode: both;
+  
+  animation:color 0.5s;
+  
+  }
+@keyframes color {
+	from {
+    transform:translateX(150px) translateY(100%) scale(2) rotate(145deg);
+		background: #f00;
+	}
+	to {
+    transform:translateX(150px) translateY(100%) scale(2) rotate(145deg);
+		background: #ff0;
+	}
+}
+	
+	
